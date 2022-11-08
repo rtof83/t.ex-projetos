@@ -4,20 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Desafio 01</title>
 </head>
 
 <body>
   <h1>Desafio 01</h1>
-  <button onclick="verificaPorta()">Verifica Porta</button>
+
+  <label>Escolha o número de tentativas</label>
+  <input id="txtTentativas" min=2 value=20 type="number" />
+
+  <br />
+
+  <label>Escolha o número de posições do array</label>
+  <input id="txtPosicoes" min=2 value=3 type="number" />
+
+  <br />
+
+  <label>Escolha a faixa de sorteio</label>
+  <input id="txtSorteio" min=2 value=3 type="number" />
+
+  <br />
+
+  <button onclick="verificaPorta()">Verificar Porta</button>
+
   <h3><div id="arr"></div></h3>
   <h3><div id="message"></div></h3>
-  <!-- <h5><div id="result"></div></h5> -->
   <h3 id="result"></h3>
 </body>
 
-<script src="script.js"></script>
+<script src="js/fase-03.js"></script>
 
 </html>

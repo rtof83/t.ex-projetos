@@ -1,13 +1,17 @@
 const verificaPorta = () => {
-  const numSorteio = 3;
-  const tamanhoArray = 3;
-  const numTentativas = 20;
+  const numSorteio = document.getElementById('txtSorteio').value;
+  const tamanhoArray = document.getElementById('txtPosicoes').value;
+  const numTentativas = document.getElementById('txtTentativas').value;
 
   let arr = [];
   let prevArr = [];
   let porta = [];
   let cont = 0;
   let lista = '';
+
+  // valida valores
+  if (numSorteio < 2 || tamanhoArray < 2 || numTentativas < 2)
+    return alert('O valor dos campos deve ser maior que 2!');
 
   document.getElementById('result').innerHTML = 'aguarde...';
   document.getElementById('arr').innerHTML = '';
@@ -43,13 +47,10 @@ const verificaPorta = () => {
   };
 
   porta.forEach((item, index) => {
-    document.getElementById('arr').innerHTML += `Porta ${index+1} aberta na tentativa de nº ${item}!<br />`;
-    if (index === 2) document.getElementById('arr').innerHTML += 'Jogo finalizado!';
+    document.getElementById('arr').innerHTML += `Porta ${index+1} aberta na tentativa nº ${item}!<br />`;
   });
+  porta.length > 2 ? document.getElementById('arr').innerHTML += 'Jogo finalizado!' : document.getElementById('arr').innerHTML += 'Tente novamente!';
 
-//   if porta.length === 3 && 
-
-  document.getElementById('message').innerHTML = `Em ${numTentativas} tentativas, ocorreram ${cont} combinações iguais!`;
-
+  document.getElementById('message').innerHTML = `Em ${numTentativas} tentativas, ${cont === 1 ? `ocorreu ${cont} combinação` : `ocorreram ${cont} combinações`}!`;
   document.getElementById('result').innerHTML = lista;  
 };
