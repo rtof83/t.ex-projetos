@@ -1,4 +1,7 @@
 # DESAFIO 01
+atividade proposta pelo Professor Roque em 07nov2022.
+
+&nbsp;
 
 ## Foi utilizado para construção:
 - HTML;
@@ -36,18 +39,18 @@
 
 ## Inicialização
 
-- Fase 1:
-  - node fase-01.js;
+- [Fase 1](https://github.com/rtof83/t.ex-projetos/blob/main/desafio-01/js/fase-01.js):
+  - node js/fase-01.js;
 
-- Fase 2:
-  - node fase-02.js;
+- [Fase 2](https://github.com/rtof83/t.ex-projetos/blob/main/desafio-01/js/fase-02.js):
+  - node js/fase-02.js;
 
-- Fase 3:
+- [Fase 3](https://github.com/rtof83/t.ex-projetos/blob/main/desafio-01/index.html):
   - abrir o arquivo index.html no navegador ou utilizar o recurso Live Server;
   - após escolher o número de tentativas, posições do array e faixa de sorteio, clique no botão "Verificar Porta";
   - o valor dos campos deve ser maior ou igual a 2;
   - dentro do número de tentativas, será verificado:
-    - 1 - se os números do array são iguais (vermelho);
-    - 2 - se a tentativa subsequente é igual à anterior (verde);
-    - validações 1 e 2 liberam Porta até o limite de 3, quando o jogo é finalizado;
+    - combinação 1 - se os números do array são iguais (vermelho);
+    - combinação 2 - se a tentativa subsequente é igual à anterior (verde);
     - nenhuma das validações acima (cinza);
+    - validações 1 e 2 liberam Porta até o limite de 3, quando o jogo é finalizado;
