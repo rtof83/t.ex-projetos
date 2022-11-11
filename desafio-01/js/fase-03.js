@@ -13,6 +13,12 @@ const verificaPorta = () => {
   if (numSorteio < 2 || tamanhoArray < 2 || numTentativas < 2)
     return alert('O valor dos campos deve ser maior que 2!');
 
+  // valida limite
+  if (numTentativas > 50000) {
+    if (!confirm('São muitas tentativas para calcular! Tem certeza que deseja continuar?'))
+      return;
+  };
+
   document.getElementById('result').innerHTML = 'aguarde...';
   document.getElementById('arr').innerHTML = '';
 
