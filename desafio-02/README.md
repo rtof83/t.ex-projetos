@@ -7,7 +7,6 @@
 ## Conteúdo
 - [Construção](#construção)
 - [Inicialização](#inicialização)
-- [Acesso à Aplicação](#inicialização)
 
 &nbsp;
 
@@ -19,6 +18,8 @@
 | `CSS`                             |
 | `SASS`                            |
 | `Responsividade Mobile Portrait`  |
+
+&nbsp;
 
 | Ferramentas                       |
 | --------------------------------- |
