@@ -1,0 +1,11 @@
+@mixin row-padding {
+  text-align: center;
+
+  font-size: 1.4rem;
+
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+ }
+}

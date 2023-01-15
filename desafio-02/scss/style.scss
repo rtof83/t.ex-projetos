@@ -1,13 +1,53 @@
+@use "var";
+@use "mixins" as mix;
+
 @use "init";
 
 @use "header";
-
-@use "historia";
-
-@use "experiencias";
 
 @use "registro";
 
 @use "fale_conosco";
 
 @use "footer";
+
+@use "mobile";
+
+
+.row_padding_history {
+  @include mix.row-padding;
+
+  padding: 2rem 20%;
+  line-height: 2;
+}
+
+.row_padding_experiences {
+  @include mix.row-padding;
+
+  padding: 2rem 5%;
+}
+
+.container {
+  padding: 1.5rem 3rem;
+
+  float: left;
+
+  width: 33.33%;
+  cursor: pointer;
+
+  &__display {
+    position: relative;
+
+    &__bottom_left {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      padding: 8px 16px;
+
+      color: white;
+      text-shadow: 3px 3px 5px #999;
+      font-weight: bold;
+    }
+  }
+}
