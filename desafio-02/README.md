@@ -7,6 +7,7 @@
 ## Conteúdo
 - [Construção](#construção)
 - [Inicialização](#inicialização)
+- [Página](#a-página-pode-ser-acessada-através-do-link)
 
 &nbsp;
 
@@ -31,5 +32,9 @@
 ## Inicialização:
 
 - abrir o arquivo [index.html](https://github.com/rtof83/t.ex-projetos/blob/main/desafio-02/index.html) no navegador ou utilizar o recurso Live Server;
+
+&nbsp;
+
+## a página pode ser acessada através do link:
 
 - http://t.ex-desafio02.s3-website-us-east-1.amazonaws.com
