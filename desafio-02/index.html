@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 02 - Página Sobre</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 02 - Página Sobre</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body>
+
+<body class="light-grey">
+
+  <header class="top">
+      <div class="title">Atlantic Hotel</div>
+
+      <div class="btn-reserve">
+          <div class="reserve">Reservar</div>
+      </div>
+  </header>
+
+<!-- menu (sit on top) -->
+  <div class="menu hide-small">
+
+    <a href="#nossa-historia" class="menu-item">NOSSA HISTÓRIA</a>
+    <a href="#experiencias" class="menu-item">EXPERIÊNCIAS</a>
+    <a href="#fale-conosco" class="menu-item">FALE CONOSCO</a>
+        
+  </div>
+
+<!-- Header -->
+
+<header class="display-container">
+
+  <div class="display-bottom-left hide-small">
+    <h2><b>inúmeras razões<br>para se hospedar conosco</b></h2>
+  </div>
+
+  <img src="./images/beach.jpg" alt="The Hotel">
+ 
+</header>
+
+  <div class="row-padding" id="nossa-historia">
+    <h2>Nossa História</h2>
+    <p>No início dos anos 70, nascia o Atlantic Hotel. Seguimos nosso espírito pioneiro e nossa paixão pela autenticidade para criar e revelar algumas das melhores experiencias em hotelaria do mundo. Hoje em dia, nossa coleção inclui hotéis únicos, trens, cruzeiros em rios e hospedagens dentro de safáris em destinos deslumbrantes no mundo todo. Cada um deles tem uma história incrível para contar.
+      </p><br>
+  </div>
+
+  <div class="row-padding" id="experiencias">
+    <h2>Experiências</h2>
+  </div>
+  
+  
+  
+  <div class="row-padding">
+    <div class="container__half">
+      <div class="container__display">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/lrs/lrs-gst-pool03.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+      </div>
+    </div>
+    <div class="container__half">
+      <div class="container__display">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/vso/vso-ext09.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+      </div>
+    </div>
+    <div class="container__half">
+      <div class="container__display">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/aif/aif-ama-ext02.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+      </div>
+    </div>
     
+  </div>
+
+
+  <div class="row-padding">
+    <div class="container__half">
+      <div class="container__display">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/saf/saf-sel-gst-reception02.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="container__display__bottom_left">Cinque Terre</span>
+      </div>
+    </div>
+
+    <div class="container__half">
+      <div class="container__display">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/cip/cip-din-restaurant-oro-food01.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="container__display__bottom_left">Cinque Terre</span>
+      </div>
+    </div>
+
+    <div class="container__half">
+      <div class="container__display">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/des/des-asia-myanmar-bagan-hot-air-balloon01.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="container__display__bottom_left">Cinque Terre</span>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+  
+
+  <div class="registro">
+    <h2>Registre-se para receber notícias exclusivas!</h2>
+    <label>E-mail</label>
+    <input class="registro__input" type="text" placeholder="seu email aqui">
+    <button type="button" class="registro__button">Cadastrar</button>
+  </div>
+
+  <div class="fale_conosco" id="fale-conosco">
+    <h2>Fale Conosco</h2>
+  
+    <form action="#" target="_blank">
+      <p><input class="fale_conosco__input" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="fale_conosco__input" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="fale_conosco__input" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="fale_conosco__button" type="submit">Enviar Mensagem</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <h5>SIGA-NOS</h5>
+  <div class="footer__social">
+    <i class="fa fa-facebook-official footer__social__opacity"></i>
+    <i class="fa fa-instagram footer__social__opacity"></i>
+    <i class="fa fa-twitter footer__social__opacity"></i>
+  </div>
+  
+  <div>
+    <i class="fa fa-map-marker footer__contact"></i> Alameda dos Vinhedos, AH<br>
+    <i class="fa fa-phone footer__contact"></i> Phone: +000 123456789<br>
+    <i class="fa fa-envelope footer__contact"> </i> Email: faleconosco@atlantichotel.com<br>
+  </div>
+
+  <p>&copy; 2023 - Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
