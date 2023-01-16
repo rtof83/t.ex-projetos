@@ -9,32 +9,27 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
 
-  <header class="top">
-      <div class="title">Atlantic Hotel</div>
+<header class="top">
+    <div class="top__title">Atlantic Hotel</div>
 
-      <div class="btn-reserve">
-          <div class="reserve">Reservar</div>
-      </div>
-  </header>
+    <div class="top__btn_reserve">
+        <div class="top__btn_reserve__reserve">Reservar</div>
+    </div>
+</header>
 
-  <div class="menu hide-small">
+<div class="menu">
+  <a href="#nossa-historia" class="menu__item">NOSSA HISTÓRIA</a>
+  <a href="#experiencias" class="menu__item">EXPERIÊNCIAS</a>
+  <a href="#fale-conosco" class="menu__item">FALE CONOSCO</a>
+</div>
 
-    <a href="#nossa-historia" class="menu-item">NOSSA HISTÓRIA</a>
-    <a href="#experiencias" class="menu-item">EXPERIÊNCIAS</a>
-    <a href="#fale-conosco" class="menu-item">FALE CONOSCO</a>
-        
-  </div>
+<div class="display_container">
 
-<!-- Header -->
-
-<div class="display-container">
-
-  <div class="display-bottom-left hide-small">
+  <div class="display_container__bottom_left hide-small">
     <h2><b>inúmeras razões<br>para se hospedar conosco</b></h2>
   </div>
 
@@ -61,41 +56,49 @@
     <h2>Experiências</h2>
     <div class="container">
       <div class="container__display">
-        <img src="https://img.belmond.com/f_auto/t_480x599/photos/lrs/lrs-gst-pool03.jpg" alt="Cinque Terre" style="width:100%">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/lrs/lrs-gst-pool03.jpg" alt="ambiente exclusivo">
         <span class="container__display__bottom_left">AMBIENTE EXCLUSIVO</span>
+        <div class="container__display__overlay">Ambiente exclusivo, perto de maravilhas naturais, areias cristalinas, palácios antigos!</div>
       </div>
     </div>
+
     <div class="container">
       <div class="container__display">
-        <img src="https://img.belmond.com/f_auto/t_480x599/photos/vso/vso-ext09.jpg" alt="Cinque Terre" style="width:100%">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/vso/vso-ext09.jpg" alt="a bordo da melhor aventura">
         <span class="container__display__bottom_left">A BORDO DA MELHOR AVENTURA</span>
+        <div class="container__display__overlay">Embarque na melhor aventura da sua vida! Requinte, conforto e alta qualidade serão seus acompanhantes nesta viagem.</div>
       </div>
     </div>
+
     <div class="container">
       <div class="container__display">
-        <img src="https://img.belmond.com/f_auto/t_480x599/photos/aif/aif-ama-ext02.jpg" alt="Cinque Terre" style="width:100%">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/aif/aif-ama-ext02.jpg" alt="cruzeiros fluviais">
         <span class="container__display__bottom_left">CRUZEIROS FLUVIAIS</span>
+        <div class="container__display__overlay">Visite rios famosos, cartões postais espetaculares, vilarejos raramente visitados... A vida é mais rica na água!</div>
       </div>
     </div>
 
     <div class="container">
       <div class="container__display">
-        <img src="https://img.belmond.com/f_auto/t_480x599/photos/saf/saf-sel-gst-reception02.jpg" alt="Cinque Terre" style="width:100%">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/saf/saf-sel-gst-reception02.jpg" alt="mundo safari">
         <span class="container__display__bottom_left">MUNDO SAFARI</span>
+        <div class="container__display__overlay">Seja envolvido por um mundo mágico! Desfrute de paisagens únicas, por terra ou helicóptero.</div>
       </div>
     </div>
 
     <div class="container">
       <div class="container__display">
-        <img src="https://img.belmond.com/f_auto/t_480x599/photos/cip/cip-din-restaurant-oro-food01.jpg" alt="Cinque Terre" style="width:100%">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/cip/cip-din-restaurant-oro-food01.jpg" alt="culinária exótica">
         <span class="container__display__bottom_left">CULINÁRIA EXÓTICA</span>
+        <div class="container__display__overlay">Seja brindado com experiências gastronômicas inesquecíveis. As melhores cozinhas do mundo estão aqui!</div>
       </div>
     </div>
 
     <div class="container">
       <div class="container__display">
-        <img src="https://img.belmond.com/f_auto/t_480x599/photos/des/des-asia-myanmar-bagan-hot-air-balloon01.jpg" alt="Cinque Terre" style="width:100%">
+        <img src="https://img.belmond.com/f_auto/t_480x599/photos/des/des-asia-myanmar-bagan-hot-air-balloon01.jpg" alt="intinerário dos sonhos">
         <span class="container__display__bottom_left">ITINERÁRIO DOS SONHOS</span>
+        <div class="container__display__overlay">Explore as maravilhas que o mundo pode oferecer. Consulte nossa coleção cuidadosamente selecionada ou personalize sua aventura!</div>
       </div>
     </div>
     
@@ -111,17 +114,16 @@
   <div class="fale_conosco" id="fale-conosco">
     <h2>Fale Conosco</h2>
   
-    <form action="#" target="_blank">
+    <form>
       <p><input class="fale_conosco__input" type="text" placeholder="Nome" required name="Name"></p>
       <p><input class="fale_conosco__input" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="fale_conosco__input" type="text" placeholder="Mensagem" required name="Message"></p>
+      <p><textarea class="fale_conosco__input" rows="5" placeholder="Mensagem" required name="Message"></textarea></p>
       <p><button class="fale_conosco__button" type="submit">Enviar Mensagem</button></p>
     </form>
   </div>
 
 </div>
 
-<!-- Footer -->
 <footer class="footer">
   <h2>SIGA-NOS</h2>
   <div class="footer__social">
@@ -136,7 +138,7 @@
     <i class="fa fa-envelope footer__contact"> </i> Email: faleconosco@atlantichotel.com<br>
   </div>
 
-  <p>&copy; 2023 - Todos os direitos reservados.</p>
+  <p class="footer__copy">&copy; 2023 - Todos os direitos reservados.</p>
 </footer>
 
 </body>

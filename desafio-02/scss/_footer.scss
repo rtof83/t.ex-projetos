@@ -1,19 +1,21 @@
 .footer {
   padding: 1rem 0;
+  width: 100%;
+  text-align: center;
 
   color: #fff;
   background-color: #000;
 
-  width: 100%;
-
-  text-align: center;
+  & h2 {
+    margin-bottom: -.5rem;
+  }
 
   &__social {
     padding: 12px 0;
     font-size: 3rem;
 
     &__icon {
-      padding: 0 .8rem 2rem .8rem;
+      padding: 0 .8rem 1.5rem .8rem;
       cursor: pointer;
       transition: .3s;
 
@@ -26,5 +28,9 @@
   &__contact {
     color: #f44336;
     padding: 0 .5rem;
+  }
+
+  &__copy {
+    margin-top: 2rem;
   }
 }

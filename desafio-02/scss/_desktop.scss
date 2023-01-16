@@ -1,0 +1,23 @@
+@media (min-width: 1378px) and (orientation: landscape) {
+  .container {
+    &__display {
+      &__overlay {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 1377px) and (orientation: landscape) {
+  .container {
+    &__display {
+      &:hover &__bottom_left {
+        opacity: 1 !important;
+      }
+
+      &__overlay {
+        display: none !important;
+      }
+    }
+  }
+}

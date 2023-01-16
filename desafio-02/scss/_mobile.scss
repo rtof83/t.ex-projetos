@@ -3,13 +3,19 @@
     display: none;
   }
 
-  .btn-reserve {
-    display: none !important;
+  .menu {
+    line-height: 1.8;
   }
 
-  .title {
-    font-size: 1.5rem !important;
-    padding: 1rem 0 !important;
+  .top {
+    &__title {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    &__btn_reserve {
+      display: none;
+    }
   }
 
   .row_padding_history, .row_padding_experiences {

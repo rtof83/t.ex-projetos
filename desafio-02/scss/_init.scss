@@ -18,6 +18,10 @@ body {
   line-height: 1.5;
 }
 
-button, input {
+button, input, textarea {
   font: inherit;
+}
+
+img {
+  max-width: 100%;
 }
